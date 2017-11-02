@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Migraine Tracker User Interface</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/default.css">
+</head>
+<body>
+    <header>
+        <h2>Migraine Tracker Interface</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Headache Entry</a></li>
+                <li><a href="index.html">Yearly Stats</a></li>
+                <li><a href="index.html">Last Month</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Enter a Headache Day</h1>
+        
+        <form action="" method="POST">
+            <fieldset disabled="disabled">
+                <label for="headacheStart">Headache Start:</label> <input type="datetime" name="headacheStart" id="headacheStart">
+                <label for="headacheEnd">Headache End:</label> <input type="datetime" name="headacheEnd" id="headacheEnd"><br>
+                <label for="severity">Maximum Pain Level:</label> <select name="severity" id="severity">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select><br>
+                <label for="medication">Medication:</label> <input type="text" name="medication" id="medication"><br>
+                <label for="nonMedication">Non-Medication Treatment:</label> <input type="text" name="nonMedication" id="nonMedication"><br>
+                <label for="relief">Pain Level After Treatment:</label> <select name="relief" id="relief">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select><br>
+                    <fieldset>
+                        <legend>Location of Pain</legend>
+                        <input type="checkbox" name="location" id="leftSide" value="left side">
+                        <label for="leftSide">Left Side of Head:</label><br> 
+                        <input type="checkbox" name="location" id="leftEye" value="left eye">
+                        <label for="leftEye">Left Side of Head:</label><br> 
+
+                    </fieldset>
+                    
+                    
+            </fieldset>
+        </form>
+    </section>
+    <footer>
+        <p><small>&copy; 2017 David Good</small></p>
+    </footer>
+</body>
+</html>
