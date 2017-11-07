@@ -22,48 +22,64 @@
     <section>
         <h1>Enter a Headache Day</h1>
         
-        <form action="" method="POST">
-            <fieldset disabled="disabled">
-                <label for="headacheStart">Headache Start:</label> <input type="datetime" name="headacheStart" id="headacheStart">
-                <label for="headacheEnd">Headache End:</label> <input type="datetime" name="headacheEnd" id="headacheEnd"><br>
-                <label for="severity">Maximum Pain Level:</label> <select name="severity" id="severity">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                </select><br>
+        <form action="" method="POST" id="new-headache">
+            <fieldset>
+                <label for="headacheStartDate">Headache Date:</label> 
+                <input type="text" name="headacheStartDate" id="headacheStartDate"><br>
+                <label for="headacheStartTime">Headache Start Time:</label> 
+                <input type="text" name="headacheStartDate" id="headacheStartDate"><br>
+                <label for="headacheEndTime">Headache End Time:</label> <input type="text" name="headacheEndTime" id="headacheEndTime"><br>
+                <fieldset>
+                    <legend>Maximum Pain Level</legend>
+                    <input type="radio" name="maxPain" id="maxPain0" checked> <label for="maxPain0">0</label>
+                    <input type="radio" name="maxPain" id="maxPain1"> <label for="maxPain1">1</label>
+                    <input type="radio" name="maxPain" id="maxPain2"> <label for="maxPain2">2</label>
+                    <input type="radio" name="maxPain" id="maxPain3"> <label for="maxPain3">3</label>
+                    <input type="radio" name="maxPain" id="maxPain4"> <label for="maxPain4">4</label>
+                    <input type="radio" name="maxPain" id="maxPain5"> <label for="maxPain5">5</label>
+                    <input type="radio" name="maxPain" id="maxPain6"> <label for="maxPain6">6</label>
+                    <input type="radio" name="maxPain" id="maxPain7"> <label for="maxPain7">7</label>
+                    <input type="radio" name="maxPain" id="maxPain8"> <label for="maxPain8">8</label>
+                    <input type="radio" name="maxPain" id="maxPain9"> <label for="maxPain9">9</label>
+                    <input type="radio" name="maxPain" id="maxPain10"> <label for="maxPain10">10</label>
+                </fieldset>                
                 <label for="medication">Medication:</label> <input type="text" name="medication" id="medication"><br>
                 <label for="nonMedication">Non-Medication Treatment:</label> <input type="text" name="nonMedication" id="nonMedication"><br>
-                <label for="relief">Pain Level After Treatment:</label> <select name="relief" id="relief">
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                    </select><br>
-                    <fieldset>
-                        <legend>Location of Pain</legend>
-                        <input type="checkbox" name="location" id="leftSide" value="left side">
-                        <label for="leftSide">Left Side of Head:</label><br> 
-                        <input type="checkbox" name="location" id="leftEye" value="left eye">
-                        <label for="leftEye">Left Side of Head:</label><br> 
-
-                    </fieldset>
-                    
-                    
+                <fieldset>
+                    <legend>Pain level after treatment</legend>
+                    <input type="radio" name="relief" id="relief0" checked> <label for="relief0">0</label>
+                    <input type="radio" name="relief" id="relief1"> <label for="relief1">1</label>
+                    <input type="radio" name="relief" id="relief2"> <label for="relief2">2</label>
+                    <input type="radio" name="relief" id="relief3"> <label for="relief3">3</label>
+                    <input type="radio" name="relief" id="relief4"> <label for="relief4">4</label>
+                    <input type="radio" name="relief" id="relief5"> <label for="relief5">5</label>
+                    <input type="radio" name="relief" id="relief6"> <label for="relief6">6</label>
+                    <input type="radio" name="relief" id="relief7"> <label for="relief7">7</label>
+                    <input type="radio" name="relief" id="relief8"> <label for="relief8">8</label>
+                    <input type="radio" name="relief" id="relief9"> <label for="relief9">9</label>
+                    <input type="radio" name="relief" id="relief10"> <label for="relief10">10</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Location of Pain (Check all that apply)</legend>
+                    <input type="checkbox" name="location" id="locationLeftSide" value="left side">
+                    <label for="leftSide">Left Side of Head</label><br> 
+                    <input type="checkbox" name="location" id="locationRightSide" value="right side">
+                    <label for="rightSide">Right Side of Head</label><br> 
+                    <input type="checkbox" name="location" id="locationLeftEye" value="left eye">
+                    <label for="leftEye">Left Eye</label><br> 
+                    <input type="checkbox" name="location" id="locationRightEye" value="right eye">
+                    <label for="rightEye">Right Eye</label><br>
+                    <input type="checkbox" name="location" id="locationForehead" value="forehead">
+                    <label for="locationForehead">Forehead</label><br>
+                    <input type="checkbox" name="location" id="locationBackHead" value="back of head">
+                    <label for="locationBackHead">Back of Head</label><br>
+                    <input type="checkbox" name="location" id="locationNeck" value="neck">
+                    <label for="locationNeck">Neck</label>
+                </fieldset>  
+                <label for="triggers">Triggers:</label> 
+                <input type="text" name="triggers" id="triggers"><br>
+                <label for="notes">Notes:</label> 
+                <textarea name="notes" id="notes" ></textarea>                    
             </fieldset>
         </form>
     </section>

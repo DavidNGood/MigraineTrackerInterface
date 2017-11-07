@@ -3,7 +3,11 @@
 }
 
 header {
-    background-image: url('img/thunderstorm.png');
-    height: 200px;
-    width: 960px;
+    background: #000 no-repeat center url('../img/thunderstorm_opt.png');
+    width: 100%;
 }
+
+  header h2 {
+      color:#fff;
+      text-align:center;
+  }

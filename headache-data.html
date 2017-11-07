@@ -9,28 +9,34 @@
 </head>
 <body>
     <header>
-        <h2>Migraine Tracker</h2>
+        <h1>Migraine Tracker Interface</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="index.html">Login</a></li>
                 <li><a href="index.html">Headache Entry</a></li>
+                <li><a href="index.html">Headache Data</a></li>
                 <li><a href="index.html">Yearly Stats</a></li>
                 <li><a href="index.html">Last Month</a></li>
             </ul>
         </nav>
-        <!-- Hamburger menu end -->
     </header>
     <section>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html">Login</a></li>
-                <li><a href="index.html">Headache Entry</a> - enter a headache day</li>
-                <li><a href="index.html">Yearly Stats</a> - migraine statistics by year</li>
-                <li><a href="index.html">Last Month</a> - migraine statistics for the last 4 weeks</li>
-            </ul>
-        </nav>
+        <h1>Headache Data</h1>
+
+        <table class="headache-data">
+                <thead>
+                    <tr><th></th><th>Date</th><th>Start Time</th><th>End Time</th><th>Pain Level</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="index.html" class="button-edit">Edit</a>
+                        <a href="index.html" class="button-delete">Delete</a></td>
+                        <td>1/1/2017</td>
+                        <td>10:00 AM</td>
+                        <td>4:00 PM</td>
+                    </tr>
+                </tbody>
+            </table>
     </section>
     <footer>
         <p><small>&copy; 2017 David Good</small></p>
