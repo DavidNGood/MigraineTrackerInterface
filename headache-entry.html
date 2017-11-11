@@ -29,7 +29,7 @@
                 <label for="headacheStartTime">Headache Start Time:</label> 
                 <input type="text" name="headacheStartDate" id="headacheStartDate"><br>
                 <label for="headacheEndTime">Headache End Time:</label> <input type="text" name="headacheEndTime" id="headacheEndTime"><br>
-                <fieldset>
+                <fieldset class="radio-array">
                     <legend>Maximum Pain Level</legend>
                     <input type="radio" name="maxPain" id="maxPain0" checked> <label for="maxPain0">0</label>
                     <input type="radio" name="maxPain" id="maxPain1"> <label for="maxPain1">1</label>
@@ -45,21 +45,21 @@
                 </fieldset>                
                 <label for="medication">Medication:</label> <input type="text" name="medication" id="medication"><br>
                 <label for="nonMedication">Non-Medication Treatment:</label> <input type="text" name="nonMedication" id="nonMedication"><br>
-                <fieldset>
+                <fieldset class="radio-array">
                     <legend>Pain level after treatment</legend>
-                    <input type="radio" name="relief" id="relief0" checked> <label for="relief0">0</label>
+                    <input type="radio" name="relief" id="relief0" checked> <label for="relief0">0</label> 
                     <input type="radio" name="relief" id="relief1"> <label for="relief1">1</label>
-                    <input type="radio" name="relief" id="relief2"> <label for="relief2">2</label>
-                    <input type="radio" name="relief" id="relief3"> <label for="relief3">3</label>
-                    <input type="radio" name="relief" id="relief4"> <label for="relief4">4</label>
-                    <input type="radio" name="relief" id="relief5"> <label for="relief5">5</label>
-                    <input type="radio" name="relief" id="relief6"> <label for="relief6">6</label>
-                    <input type="radio" name="relief" id="relief7"> <label for="relief7">7</label>
-                    <input type="radio" name="relief" id="relief8"> <label for="relief8">8</label>
-                    <input type="radio" name="relief" id="relief9"> <label for="relief9">9</label>
-                    <input type="radio" name="relief" id="relief10"> <label for="relief10">10</label>
+                    <input type="radio" name="relief" id="relief2"> <label for="relief2">2</label> 
+                    <input type="radio" name="relief" id="relief3"> <label for="relief3">3</label> 
+                    <input type="radio" name="relief" id="relief4"> <label for="relief4">4</label> 
+                    <input type="radio" name="relief" id="relief5"> <label for="relief5">5</label>  
+                    <input type="radio" name="relief" id="relief6"> <label for="relief6">6</label> 
+                    <input type="radio" name="relief" id="relief7"> <label for="relief7">7</label> 
+                    <input type="radio" name="relief" id="relief8"> <label for="relief8">8</label>  
+                    <input type="radio" name="relief" id="relief9"> <label for="relief9">9</label>  
+                    <input type="radio" name="relief" id="relief10"> <label for="relief10">10</label> 
                 </fieldset>
-                <fieldset>
+                <fieldset class="radio-array">
                     <legend>Location of Pain (Check all that apply)</legend>
                     <input type="checkbox" name="location" id="locationLeftSide" value="left side">
                     <label for="leftSide">Left Side of Head</label><br> 
@@ -81,7 +81,7 @@
                 <label for="notes">Notes:</label> 
                 <textarea name="notes" id="notes" ></textarea>                    
             </fieldset>
-            <button type="submit" name="submit" id="submit">Submit</button>
+            <button type="submit" name="submit" id="submit">Add Headache</button>
         </form>
     </section>
     <footer>

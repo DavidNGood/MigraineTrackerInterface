@@ -1,45 +1,75 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Migraine Tracker User Interface</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/default.css">
-</head>
-<body>
-    <header>
-        <h1>Migraine Tracker Interface</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html">Headache Entry</a></li>
-                <li><a href="index.html">Headache Data</a></li>
-                <li><a href="index.html">Yearly Stats</a></li>
-                <li><a href="index.html">Last Month</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section>
-        <h1>Headache Data</h1>
-
-        <table class="headache-data">
-                <thead>
-                    <tr><th></th><th>Date</th><th>Start Time</th><th>End Time</th><th>Pain Level</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><a href="index.html" class="button-edit">Edit</a>
-                        <a href="index.html" class="button-delete">Delete</a></td>
-                        <td>1/1/2017</td>
-                        <td>10:00 AM</td>
-                        <td>4:00 PM</td>
-                    </tr>
-                </tbody>
-            </table>
-    </section>
-    <footer>
-        <p><small>&copy; 2017 David Good</small></p>
-    </footer>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Migraine Tracker User Interface</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/default.css">
+    </head>
+    <body>
+        <header>
+            <h2>Migraine Tracker</h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Login</a></li>
+                    <li><a href="index.html">Account</a></li>
+                    <li><a href="index.html">Headache Entry</a></li>
+                    <li><a href="index.html">Yearly Stats</a></li>
+                    <li><a href="index.html">Last Month</a></li>
+                </ul>
+            </nav>
+        </header>    
+        <section>
+            <h1>Headache Data</h1>
+            <div><a href="headache-entry.html" class="button-new">New Headache Day</a></div>
+            <table class="headache-data">
+                    <thead>
+                        <tr><th></th><th>Date</th><th>Start Time</th><th>End Time</th><th>Pain Level</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="headache-data-buttons">
+                                <a href="index.html" class="button-edit">Edit</a>
+                                <a href="index.html" class="button-delete">Delete</a></td>
+                            <td class="headache-data-date">1/1/2017</td>
+                            <td class="headache-data-time">10:00 AM</td>
+                            <td class="headache-data-time">4:00 PM</td>
+                            <td class="headache-data-pain">5</td>
+                        </tr>
+                        <tr>
+                            <td class="headache-data-buttons">
+                                <a href="index.html" class="button-edit">Edit</a> 
+                                <a href="index.html" class="button-delete">Delete</a></td>
+                            <td class="headache-data-date">1/1/2017</td>
+                            <td class="headache-data-time">10:00 AM</td>
+                            <td class="headache-data-time">4:00 PM</td>
+                            <td class="headache-data-pain">5</td>
+                        </tr>
+                        <tr>
+                            <td class="headache-data-buttons">
+                                <a href="index.html" class="button-edit">Edit</a> 
+                                <a href="index.html" class="button-delete">Delete</a></td>
+                            <td class="headache-data-date">1/1/2017</td>
+                            <td class="headache-data-time">10:00 AM</td>
+                            <td class="headache-data-time">4:00 PM</td>
+                            <td class="headache-data-pain">5</td>
+                        </tr>
+                        <tr>
+                            <td class="headache-data-buttons">
+                                <a href="index.html" class="button-edit">Edit</a> 
+                                <a href="index.html" class="button-delete">Delete</a></td>
+                            <td class="headache-data-date">1/1/2017</td>
+                            <td class="headache-data-time">10:00 AM</td>
+                            <td class="headache-data-time">4:00 PM</td>
+                            <td class="headache-data-pain">5</td>
+                        </tr>
+                    </tbody>
+                </table>
+        </section>
+        <footer>
+            <p><small>&copy; 2017 David Good</small></p>
+        </footer>
+    </body>
 </html>
