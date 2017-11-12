@@ -1,10 +1,53 @@
+/* Main Styes */
 * {
     font-family:sans-serif;
     box-sizing: border-box;
 }
 
+section {
+    padding: 10px;
+}
+
+form {
+    margin:20px;
+}
+
+label {
+    display:block;
+    font-weight:bold;
+    margin-top:20px;
+}
+
+button {
+    display:block;
+    margin: 10px 0 0 auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color:cyan;
+    background-image: linear-gradient(to top, black, gray);
+
+}
+
+legend {
+    font-weight:bold;
+}
+
+input[type=text], input[type=password] {
+    width:100%;
+}
+
+input[type=checkbox], input[type=radio] {
+    margin-bottom:10px;
+}
+
+textarea {
+    width:100%;
+    height:75px;
+}
+
+/* Header and Footer */
 header {
-    background: #000 no-repeat center url('../img/thunderstorm_opt.png');
+    background: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), no-repeat center url('../img/thunderstorm_opt.png');
     background-size:cover;
     width: 100%;
     border-radius: 10px;
@@ -35,13 +78,13 @@ header nav ul {
 }
 
 header nav ul li {    
-    border: 1px solid white;
+    border: 1px solid cyan;
     border-bottom:0;
     border-radius: 10px;
 }
 
 header nav ul li:last-child {
-    border-bottom:1px solid white;
+    border-bottom:1px solid cyan;
 }
 
 header nav ul li:hover {
@@ -57,6 +100,7 @@ footer {
     padding: 10px;
 }
 
+/* Home Page */
 .home-nav ul {
     list-style: none;
 }
@@ -65,38 +109,21 @@ footer {
     padding: 5px;
 }
 
-section {
-    padding: 10px;
-}
-
-form {
-    margin:20px;
-}
-
-label {
-    display:block;
-    font-weight:bold;
-    margin-top:20px;
-}
-
-button {
-    display:block;
-    margin: 10px 0 0 auto;
-    padding: 10px 20px;
-    border-radius: 10px;
-    color:cyan;
-    background-image: linear-gradient(to top, black, gray);
-
-}
-
-.headache-data tr:nth-child(even) {
+/* Headache Data and Yearly Stats Pages */
+.headache-data tr:nth-child(odd), .yearly-stats tr:nth-child(odd) {
     background: #ccc;
 }
-.headache-data td {
-    padding:10px 20px;
+
+.headache-data th, .yearly-stats th {
+    background:#fff;
 }
 
-.headache-data th {
+.headache-data td, .yearly-stats td {
+    padding:10px 20px;
+    margin:0;
+}
+
+.headache-data th, .yearly-stats th {
     text-align:center;
     font-weight:bold;
     vertical-align: top;
@@ -113,6 +140,12 @@ button {
     color:cyan;
     background-image: linear-gradient(to top, black, gray);
     text-decoration: none;
+    display:block;
+}
+
+.button-new {
+    display:inline-block;
+   margin-bottom: 20px;
 }
 
 a.button-delete {
@@ -127,10 +160,6 @@ a.button-delete {
     text-align:center;
 }
 
-legend {
-    font-weight:bold;
-}
-
 .radio-array {
     margin-top:20px;
 }
@@ -140,11 +169,39 @@ legend {
     font-weight: normal;
 }
 
-input[type=text] {
-    width:100%;
+.form-stats label {
+    display:inline;
 }
 
-textarea {
-    width:100%;
-    height:75px;
+.yearly-stats td {
+    text-align:center;
+}
+
+td.stats-month {
+    text-align:left;
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
 }

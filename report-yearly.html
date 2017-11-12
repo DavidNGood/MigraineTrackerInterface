@@ -9,44 +9,49 @@
 </head>
 <body>
     <header>
-        <h1>Migraine Tracker Interface</h1>
+        <h2>Migraine Tracker</h2>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="index.html">Headache Entry</a></li>
-                <li><a href="index.html">Yearly Stats</a></li>
-                <li><a href="index.html">Last Month</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="headache-entry.html">Add a Headache</a></li>
+                <li><a href="report-yearly.html">Yearly Stats</a></li>
+                <li><a href="report-last-month.html">Last Month</a></li>
+                <li><a href="headache-data.html">Headache Data</a></li>
             </ul>
         </nav>
-    </header>
+    </header> 
     <section>
-        <h1>Headache Statistics for 2017</h1>
-        <form action="" method="POST" id="new-headache">
+        <form action="" method="POST" class="form-stats">
+            <label for="year">Select Year:</label>
             <select name="year" id="year">
                 <option value="2013">2013</option>
-                <option value="2013">2014</option>
-                <option value="2013">2015</option>
-                <option value="2013">2016</option>
-                <option value="2013">2017</option>
-                <option value="2013">2018</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
             </select>
-            <button type="submit" name="submit" id="submit">Submit</button>
         </form>
+        <h1>Headache Statistics for 2017</h1>
         <table class="yearly-stats">
             <thead>
                 <tr><th>Month</th><th>Total Days</th><th>Light</th><th>Moderate</th><th>Severe</th><th>DHE</th><th>Analgesics</th><th>Average Pain</th></tr>
             </thead>
             <tbody>
-                <tr><td>January</td><td>21</td><td>3</td><td>13</td><td>5</td><td>4</td><td>11</td><td>5.7</td></tr>
-                <tr><td>February</td><td>21</td><td>5</td><td>13</td><td>3</td><td>1</td><td>12</td><td>4.9</td></tr>
-                <tr><td>March</td><td>21</td><td>2</td><td>13</td><td>6</td><td>2</td><td>12</td><td>5.6</td></tr>
-                <tr><td>April</td><td>30</td><td>6</td><td>17</td><td>7</td><td>2</td><td>20</td><td>5.3</td></tr>
-                <tr><td>May</td><td>27</td><td>3</td><td>22</td><td>2</td><td>3</td><td>15</td><td>5</td></tr>
-                <tr><td>June</td><td>28</td><td>8</td><td>14</td><td>6</td><td>3</td><td>8</td><td>4.8</td></tr>
-                <tr><td>July</td><td>23</td><td>9</td><td>13</td><td>1</td><td>2</td><td>3</td><td>4.1</td></tr>
-                <tr><td>August</td><td>13</td><td>4</td><td>8</td><td>1</td><td>1</td><td>5</td><td>4.8</td></tr>
-                <tr><td>September</td><td>11</td><td>2</td><td>8</td><td>1</td><td>1</td><td>6</td><td>4.8</td></tr>
-                <tr><td>October</td><td>2</td><td>0</td><td>2</td><td>0</td><td>0</td><td>2</td><td>5.5</td></tr>
+                <tr><td class="stats-month">January</td><td>21</td><td>3</td><td>13</td><td>5</td><td>4</td><td>11</td><td>5.7</td></tr>
+                <tr><td class="stats-month">February</td><td>21</td><td>5</td><td>13</td><td>3</td><td>1</td><td>12</td><td>4.9</td></tr>
+                <tr><td class="stats-month">March</td><td>21</td><td>2</td><td>13</td><td>6</td><td>2</td><td>12</td><td>5.6</td></tr>
+                <tr><td class="stats-month">April</td><td>30</td><td>6</td><td>17</td><td>7</td><td>2</td><td>20</td><td>5.3</td></tr>
+                <tr><td class="stats-month">May</td><td>27</td><td>3</td><td>22</td><td>2</td><td>3</td><td>15</td><td>5</td></tr>
+                <tr><td class="stats-month">June</td><td>28</td><td>8</td><td>14</td><td>6</td><td>3</td><td>8</td><td>4.8</td></tr>
+                <tr><td class="stats-month">July</td><td>23</td><td>9</td><td>13</td><td>1</td><td>2</td><td>3</td><td>4.1</td></tr>
+                <tr><td class="stats-month">August</td><td>13</td><td>4</td><td>8</td><td>1</td><td>1</td><td>5</td><td>4.8</td></tr>
+                <tr><td class="stats-month">September</td><td>11</td><td>2</td><td>8</td><td>1</td><td>1</td><td>6</td><td>4.8</td></tr>
+                <tr><td class="stats-month">October</td><td>2</td><td>0</td><td>2</td><td>0</td><td>0</td><td>2</td><td>5.5</td></tr>
             </tbody>
         </table>
     </section>
