@@ -4,6 +4,23 @@
     box-sizing: border-box;
 }
 
+body {
+    font-size: 1rem;
+    line-height: 1.25rem;
+}
+
+h1 {
+    font-size: 1.75rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
 section {
     padding: 10px;
 }
@@ -65,6 +82,7 @@ header nav ul li a {
     display:block;
     padding: 10px;
     padding-left: 50px;
+    font-size: 1rem;
 }
 
 header nav ul li a:hover {
@@ -198,7 +216,65 @@ td.stats-month {
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+    body {
+        display:flex;
+        flex-direction: column;
+        min-height:100vh;
+    }
 
+    section {
+        flex: 1;
+    }
+
+    header, footer, section {
+        max-width: 960px;
+        width:100%;
+        margin: 0 auto;
+    }
+
+    header {
+        margin-bottom: 20px;
+    }
+    
+    header nav ul {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+        top: 1.25rem;
+    }
+
+    header nav ul li a {
+        padding:10px 20px;
+    }
+
+    header nav ul li {    
+        border: 1px solid cyan;
+        background: #000;
+        border-radius: 0;
+    }
+    
+    header nav ul li:first-child {
+        border-radius: 10px 0 0 10px;
+    }
+    
+    header nav ul li:last-child {
+        border-radius: 0 10px 10px 0;
+    }
+
+    .headache-data-buttons a, .button-new {
+        display:inline;
+    }
+
+    table {
+        margin: 10px auto;
+    }
+
+    form {
+        width:500px;
+        margin: 10px auto;
+    }
+    
 }
 
 /* Large Devices, Wide Screens */
